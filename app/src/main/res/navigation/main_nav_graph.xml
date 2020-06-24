@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph.xml"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.sunnyxibei.timeriver.ui.fragment.ListFragment"
+        android:label="ListFragment" />
+
+    <fragment
+        android:id="@+id/descFragment"
+        android:name="com.sunnyxibei.timeriver.ui.fragment.DescFragment"
+        android:label="DescFragment" />
+
+    <action
+        android:id="@+id/action_global_descFragment"
+        app:destination="@id/descFragment"
+        app:enterAnim="@anim/fragment_fade_enter"
+        app:exitAnim="@anim/fragment_fade_exit"
+        app:launchSingleTop="true" />
+</navigation>
