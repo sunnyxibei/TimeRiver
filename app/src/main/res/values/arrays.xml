@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="poem_array">
+        <item>村烟和海雾，舟火乱江星。\n路转定山绕，塘连范浦横。</item>
+        <item>如何飘梗处，又到采兰时。</item>
+    </string-array>
+</resources>

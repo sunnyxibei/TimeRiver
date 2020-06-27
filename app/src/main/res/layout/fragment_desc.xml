@@ -4,32 +4,45 @@
     android:id="@+id/draggable_frame"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    app:dragDismissDistance="200dp"
+    android:background="@drawable/img_holder_1"
+    app:dragDismissDistance="260dp"
     app:dragDismissScale="0.8">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/image_destination"
-                android:layout_width="wrap_content"
+                android:id="@+id/image_background"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
-                android:transitionName="image_destination"
+                android:transitionName="image_background"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/img_destination" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img_holder_1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:alpha="0"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
-
 
 </com.sunnyxibei.timeriver.ui.widget.ElasticDragDismissFrameLayout>
