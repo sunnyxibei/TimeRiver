@@ -28,22 +28,23 @@ import android.util.Property
 import android.view.animation.AnimationUtils
 import android.view.animation.Interpolator
 import android.view.animation.LinearInterpolator
-import com.sunnyxibei.timeriver.R
 import java.util.*
 
 /**
  * Utility methods for working with animations.
  */
 object AnimUtils {
+
     private var fastOutSlowIn: Interpolator? = null
     private var fastOutLinearIn: Interpolator? = null
     private var linearOutSlowIn: Interpolator? = null
     private var linear: Interpolator? = null
+
     fun getFastOutSlowInInterpolator(context: Context?): Interpolator? {
         if (fastOutSlowIn == null) {
             fastOutSlowIn = AnimationUtils.loadInterpolator(
                 context,
-                R.interpolator.fast_out_slow_in
+                android.R.interpolator.fast_out_slow_in
             )
         }
         return fastOutSlowIn
